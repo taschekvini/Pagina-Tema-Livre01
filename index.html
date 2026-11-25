@@ -12,7 +12,7 @@
   <header class="cabecalho">
     <div class="container">
       <h1>Joinville Esporte Clube</h1>
-      <p>A paixão pelo tricolor de Santa Catarina — Nascido Campeão.</p>
+      <p>A paixão tricolor de Santa Catarina — Nascido Campeão.</p>
       <nav aria-label="Menu principal">
         <ul class="menu">
           <li><a href="#historia">História</a></li>
@@ -34,7 +34,7 @@
           <p>
             Fundado em <strong>29 de janeiro de 1976</strong>, a partir da fusão dos 
             departamentos de futebol do América e do Caxias, o <strong>Joinville Esporte Clube (JEC)</strong> 
-            tem uma história repleta de superações e conquistas. Com sede na cidade de Joinville, Santa Catarina, o clube rapidamente se tornou uma força no cenário esportivo estadual e nacional.
+            construiu uma das trajetórias mais vitoriosas do futebol catarinense.
           </p>
           <p>
             Mandando seus jogos na <strong>Arena Joinville</strong>, o Coelho é reconhecido 
@@ -44,7 +44,7 @@
         <figure class="imagem-destaque">
           <img 
             src="img/jec01.jpg" 
-            alt="foto do escudo do jec"
+            alt="Ilustração estilizada de um escudo esportivo nas cores vermelho, preto e branco representando o Joinville Esporte Clube"
           >
           <figcaption>As cores vermelha, preta e branca do Tricolor</figcaption>
         </figure>
@@ -63,10 +63,58 @@
       </ul>
     </section>
 
+    <!-- Seção 3: Formulário com validação e cálculo -->
+    <section id="calculadora-jec" class="secao">
+      <h2>Calculadora de Aproveitamento "Pé-Quente"</h2>
+      <p>Descubra qual é o aproveitamento do JEC nos jogos em que você esteve torcendo!</p>
+
+      <form id="form-jec" novalidate>
+        <div class="campo-grupo">
+          <label for="torcedor">Nome do torcedor(a):</label>
+          <input 
+            type="text" 
+            id="torcedor" 
+            name="torcedor" 
+            placeholder="Ex: Gabriel Silva" 
+            required
+          >
+        </div>
+
+        <div class="campo-grupo">
+          <label for="total-jogos">Total de jogos do JEC que você acompanhou (1 a 100):</label>
+          <input 
+            type="number" 
+            id="total-jogos" 
+            name="total-jogos" 
+            placeholder="Ex: 10" 
+            required
+          >
+        </div>
+
+        <div class="campo-grupo">
+          <label for="vitorias">Quantas vitórias do Tricolor você viu nesses jogos?</label>
+          <input 
+            type="number" 
+            id="vitorias" 
+            name="vitorias" 
+            placeholder="Ex: 7" 
+            required
+          >
+        </div>
+
+        <button type="submit" class="btn-calcular">Calcular Aproveitamento</button>
+      </form>
+
+      <!-- Área acessível para exibir erros ou resultado -->
+      <div id="resultado-jec" class="feedback" role="status" aria-live="polite"></div>
+    </section>
+
+  </main>
+
   <!-- Rodapé -->
   <footer class="rodape">
     <div class="container">
-      <p>Pagina desenvolvida por Vinicius Taschek - DSM3 - SENAI/SC Joinville.</p>
+      <p>Página de fãs desenvolvida para a UC Programação de Aplicativos — SENAI/SC Joinville.</p>
     </div>
   </footer>
 
